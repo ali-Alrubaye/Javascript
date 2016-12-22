@@ -1,0 +1,26 @@
+
+/*Start Scetion Contact-Us*/
+.contact-us {
+    background-color:#DDD;
+    background-size: cover;
+    min-height: 300px;
+}
+
+    .contact-us .fields {
+        background: rgba(9,9,9,0.6);
+        min-height: 300px;
+        color: #DDD;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .contact-us p {
+        margin-bottom: 40px;
+    }
+
+    .contact-us input[type="text"] {
+        background: rgba(82,78,78,0.7);
+        color: #FFF;
+        border: none;
+    }
+/*End Scetion Contact-Us*/

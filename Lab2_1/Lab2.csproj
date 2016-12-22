@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{8F200C7E-DD01-485A-B9F8-C0E98788DE4B}</ProjectGuid>
+    <ProjectGuid>{8C14760F-F3F6-4363-99A5-65FD71E4DEE1}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LabEtt</RootNamespace>
-    <AssemblyName>LabEtt</AssemblyName>
+    <RootNamespace>Lab2_1</RootNamespace>
+    <AssemblyName>Lab2_1</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -98,6 +98,8 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Models\Lab2.1.html" />
+    <Content Include="Models\Lab2.2.html" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -108,9 +110,10 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Global.asax" />
-    <Content Include="Models\LabEtt.html" />
-    <Content Include="MyJS\JSLabEtt.js" />
-    <Content Include="StyleCss\styleLabEtt.css" />
+    <Content Include="MyCss\Css2.2.css" />
+    <Content Include="MyCss\mycss.css" />
+    <Content Include="MyJS\Js2.1.js" />
+    <Content Include="MyJS\Js2.2.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -135,9 +138,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>8302</DevelopmentServerPort>
+          <DevelopmentServerPort>8823</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:8302/</IISUrl>
+          <IISUrl>http://localhost:8823/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

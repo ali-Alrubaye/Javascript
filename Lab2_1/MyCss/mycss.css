@@ -1,0 +1,15 @@
+
+body {
+    background-color: whitesmoke;
+    
+}
+
+#Paragraph1{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+#Paragraph2, #Paragraph3
+{
+    color: darkgray;
+    font-family: Arial, Helvetica, sans-serif
+}

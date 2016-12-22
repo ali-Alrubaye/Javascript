@@ -1,0 +1,22 @@
+    /*var getElement = document.getElementById('gg');
+        var i;
+        var item = document.getElementsByTagName('input')
+      
+        for(i=0; i < item.length; i = i + 1) {
+           getElement.innerHTML += item[i].value +'<br>';
+        }
+         getElement.innerHTML = document.forms[0].A1.type;
+         getElement.innerHTML = document.forms[0].F2.type;
+         getElement.innerHTML = document.forms[0].E3.type;
+         getElement.innerHTML = document.forms[0].T4.type;
+         getElement.innerHTML = document.forms[0].S5.type;
+         getElement.innerHTML = document.forms[0].G6.type;
+
+        ----------------------------------
+         <input type="text" name="A1" value="Anvandare" required id="Anvandare" class="form-control input-lg" placeholder="Användarnamn"/>
+                <input type="text" name="F2" value="Forname" required id="Forname" class="form-control input-lg" placeholder="Förname"/>
+                <input type="text" name="E3" required id="Efternamn" class="form-control input-lg" placeholder="Efternamn"/>
+                <input type="text" name="T4" required id="Telnummer" class="form-control input-lg" placeholder="Telnummer"/>
+                <input type="text" name="S5" required id="Stad" class="form-control input-lg" placeholder="Stad"/>
+                <input type="text" name="G6" required id="Alder" class="form-control input-lg" placeholder="Ålder"/>
+    */

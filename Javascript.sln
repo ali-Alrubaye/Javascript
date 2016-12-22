@@ -5,6 +5,12 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabEtt", "LabEtt\LabEtt.csproj", "{8F200C7E-DD01-485A-B9F8-C0E98788DE4B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LabTwo", "LabTwo", "{264B9A0B-B63D-4F1D-B76C-AC582D9ACA9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab2", "Lab2", "{364653DA-206A-4C82-B936-BD916033DDCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab2", "Lab2_1\Lab2.csproj", "{8C14760F-F3F6-4363-99A5-65FD71E4DEE1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +21,16 @@ Global
 		{8F200C7E-DD01-485A-B9F8-C0E98788DE4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F200C7E-DD01-485A-B9F8-C0E98788DE4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F200C7E-DD01-485A-B9F8-C0E98788DE4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C14760F-F3F6-4363-99A5-65FD71E4DEE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C14760F-F3F6-4363-99A5-65FD71E4DEE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C14760F-F3F6-4363-99A5-65FD71E4DEE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C14760F-F3F6-4363-99A5-65FD71E4DEE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{364653DA-206A-4C82-B936-BD916033DDCC} = {264B9A0B-B63D-4F1D-B76C-AC582D9ACA9E}
+		{8C14760F-F3F6-4363-99A5-65FD71E4DEE1} = {364653DA-206A-4C82-B936-BD916033DDCC}
 	EndGlobalSection
 EndGlobal
