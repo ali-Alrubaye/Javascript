@@ -5,37 +5,37 @@ window.onload = function () {
         myForname = document.getElementById("Forname"),
         myEfternamn = document.getElementById("Efternamn"),
         myTelnu = document.getElementById("Telnummer"),
-    myStad = document.getElementById("Stad"),
-    myAge = document.getElementById("Alder"),
-    myFDiv = document.getElementById("divFel"),
-    myTextarea = document.getElementById("show"),
-    myButton = document.getElementById("button");
-
-    myFDiv.style.visibility = "hidden";
-    myTextarea.style.visibility = "hidden";
+        myStad = document.getElementById("Stad"),
+        myAge = document.getElementById("Alder"),
+        myFDiv = document.getElementById("divFel"),
+        myTextarea = document.getElementById("show"),
+        myButton = document.getElementById("button");
+       
+        myFDiv.style.visibility = "hidden";
+        myTextarea.style.visibility = "hidden";
   
      var  value,
             i;
     
-    var Per = function(anvandare, forName, efterName, tel, stad, alder) {
-        this.Anvandare = anvandare;
-        this.Forname = forName;
-        this.Efternamn = efterName;
-        this.Telnummer = tel;
-        this.Stad = stad;
-        this.Alder = alder;
-    };
-  
-    var persons = new Per(myAnvandare.value, myForname.value, myEfternamn.value, myTelnu.value, myStad.value, myAge.value
-    );
-    //for (var j in persons) {
-    //    if (persons.hasOwnProperty(j)) {
-    //        document.getElementById("gg").innerHTML +=j + persons[j]+ "<br/>";
-    //    }
-    //};
-    console.log(persons);
-   //document.getElementById("gg").innerHTML = persons.Anvandare.value + persons.Forname + persons.Efternamn + persons.Telnummer + persons.Stad + persons.Alder + " ";
+    // var Person = function (anvandare, forName, efterName, tel, stad, alder) {
+    //     var newPerson = {};
+    //    newPerson.Anvandare = anvandare;
+    //    newPerson.Forname = forName;
+    //    newPerson.Efternamn = efterName;
+    //    newPerson.Telnummer = tel;
+    //    newPerson.Stad = stad;
+    //    newPerson.Alder = alder;
 
+    //    return newPerson;
+    //};
+  
+    // var p = new Person(myAnvandare.value, myForname.value, myEfternamn.value, myTelnu.value, myStad.value, myAge.value
+    //);
+  
+    // //console.log(Person.value);
+    // //document.getElementById("gg").innerHTML = Person.Anvandare.value + Person.Forname + Person.Efternamn + Person.Telnummer + Person.Stad + Person.Alder + " ";
+    // document.getElementById("gg").innerHTML = p.Anvandare + p.Forname + p.Efternamn + p.Telnummer + p.Stad + p.Alder + " ";
+    // console.log(p.Anvandare + p.Forname + p.Efternamn + p.Telnummer + p.Stad + p.Alder + " ")
    //console.log(person);
     //for (i = 0; i < persons.length; i++) {
     //    value = persons[i];
@@ -45,8 +45,6 @@ window.onload = function () {
 
 
     //       var listPerson ={}, p=[];
-
-
     //             listPerson.Anvandare=myAnvandare.value;
     //             listPerson.Forname=myForname.value;
     //             listPerson.Efternamn=myEfternamn.value;
@@ -59,18 +57,17 @@ window.onload = function () {
 
     myButton.onclick = function () {
 
-        setInterval(function () {
-            myTextarea.style.visibility = "visible";
-        }, 3000);
-  for (var j in persons) {
-                if (persons.hasOwnProperty(j)) {
-                    document.getElementById("gg").innerHTML += j + persons[j] + "<br/>";
-                }
-            };
-        if (!myAge.value.match(/[a-zA-Z]+/) && myAge.value > 1 && myAge.value < 100) {
-            // myTextarea.style.visibility = "visible";
-          
+        //setTimeout(function () {
+        //    myTextarea.style.visibility = "visible";
+        //}, 5000);
 
+
+        if (!myAge.value.match(/[a-zA-Z]+/) && myAge.value > 1 && myAge.value < 100) {
+             myTextarea.style.visibility = "visible";
+          
+            setTimeout(function () {
+                myTextarea.style.visibility = "hidden";
+            }, 5000);
             myTextarea.style.backgroundColor = "#90EE90";
             myTextarea.innerHTML += myAnvandare.value;
             myTextarea.innerHTML += myForname.value;
@@ -79,6 +76,13 @@ window.onload = function () {
             myTextarea.innerHTML += myStad.value;
             myTextarea.innerHTML += myAge.value;
 
+            var getElement = document.getElementById("gg");
+            var i;
+            var item = document.getElementsByTagName("input")
+
+            for (i = 0; i < item.length; i = i + 1) {
+                getElement.innerHTML += item[i].value + "<br>";
+            }
 
         } else {
             myFDiv.style.backgroundColor = "red";
@@ -89,10 +93,3 @@ window.onload = function () {
     }
 };
 
-// var getElement = document.getElementById("gg");
-//     var i;
-//     var item = document.getElementsByTagName("input")
-
-//     for(i=0; i < item.length; i = i + 1) {
-//        getElement.innerHTML += item[i].type +"<br>";
-//     }
