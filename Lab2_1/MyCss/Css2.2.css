@@ -20,3 +20,61 @@
                 <input type="text" name="S5" required id="Stad" class="form-control input-lg" placeholder="Stad"/>
                 <input type="text" name="G6" required id="Alder" class="form-control input-lg" placeholder="Ålder"/>
     */
+
+    
+    /*var Person = function (anvandare, forName, efterName, tel, stad, alder) {
+        var newPerson = {};
+       newPerson.Anvandare = anvandare;
+       newPerson.Forname = forName;
+       newPerson.Efternamn = efterName;
+       newPerson.Telnummer = tel;
+       newPerson.Stad = stad;
+       newPerson.Alder = alder;
+
+       return newPerson;
+    };
+  
+     var p = new Person(myAnvandare.value, myForname.value, myEfternamn.value,myTelnu.value,myStad.value, myAge.value
+    );
+  
+       console.log(Person.value);
+       document.getElementById("gg").innerHTML = Person.Anvandare.value + Person.Forname+Person.Efternamn + Person.Telnummer + Person.Stad + Person.Alder + " ";
+     document.getElementById("gg").innerHTML = p.Anvandare + p.Forname + p.Efternamn+p.Telnummer + p.Stad + p.Alder + " ";
+     console.log(p.Anvandare + p.Forname + p.Efternamn + p.Telnummer + p.Stad + p.Alder + " ")
+      console.log(person);
+    for (i = 0; i < persons.length; i++) {
+        value = persons[i];
+      
+        document.getElementById("gg").innerHTML = value.Anvandare.value + value.Forname+value.Efternamn + value.Telnummer + value.Stad + value.Alder + " ";
+    }
+
+
+           var listPerson ={}, p=[];
+                 listPerson.Anvandare=myAnvandare.value;
+                 listPerson.Forname=myForname.value;
+                 listPerson.Efternamn=myEfternamn.value;
+                 listPerson.Telnummer=myTelnu.value;
+                 listPerson.Stad=myStad.value;
+                 listPerson.Alder=myAge.value;
+     p.push({listPerson: listPerson});
+     console.log(persons);*/
+ 
+
+    /* --------------------------
+    var ou = document.forms[0];
+                        var ouu = ou.getElementsByTagName("input");
+                        for (i = 0; i < ouu.length; i = i + 1) {
+                            var ouuu = ouu[i].getAttribute("id");
+                            if (re.hasOwnProperty(ouuu)) {
+                                console.log(re.hasOwnProperty(ouuu));
+                               var jj= document.getElementById(ouuu);
+                               jj.user = p[i].user;
+                               jj.fName = p[i].fName;
+                               jj.lNamn = p[i].lNamn;
+                               jj.tel = p[i].tel;
+                               jj.stad = p[i].stad;
+                               jj.age = p[i].age;
+                            }
+                       
+
+                    }*/

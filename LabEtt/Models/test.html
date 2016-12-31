@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Check input fields for Valid Data</title>
+    <script type="text/javascript">
+
+        var numbersOnly = /^\d+$/;
+        var decimalOnly = /^\s*-?[1-9]\d*(\.\d{1,2})?\s*$/;
+        var uppercaseOnly = /^[A-Z]+$/;
+        var lowercaseOnly = /^[a-z]+$/;
+        var stringOnly = /^[A-Za-z0-9]+$/;
+
+        function testInputData(myfield, restrictionType) {
+
+            var myData = document.getElementById(myfield).value;
+            if (myData !== '') {
+                if (restrictionType.test(myData)) {
+                    alert('It is GOOD!');
+                } else {
+                    alert('Your data input is invalid!');
+                }
+            } else {
+                alert('Please enter data!');
+            }
+            return;
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1>JavaScript: Test input fields for Valid Data</h1>
+    <p>
+        This JavaScript validates character input the user can enter
+        into an input or textarea. This is useful in aiding the user enter the
+        correct information such as a number or username.
+    </p>
+    <form name="as400samplecode" action="" method="get">
+
+        <table>
+
+            <tr>
+                <td>Check for Numbers:</td>
+                <td>
+                    <input type="text" id="input1" maxlength="30" size="30" />
+                </td>
+                <td>
+                    <input type="button" value="Test"
+                                onclick="Javascript:testInputData('input1',numbersOnly)" />
+                </td>
+            </tr>
+            <tr>
+                <td>Check for upto 2 Decimal:</td>
+                <td>
+                    <input type="text" id="input2" maxlength="30" size="30" />
+                </td>
+                <td>
+                    <input type="button" value="Test"
+                                onclick="Javascript:testInputData('input2',decimalOnly)" />
+                </td>
+            </tr>
+            <tr>
+                <td>Check for Uppercase String:</td>
+                <td>
+                    <input type="text" id="input3" maxlength="30" size="30" />
+                </td>
+                <td>
+                    <input type="button" value="Test"
+                                onclick="Javascript:testInputData('input3',uppercaseOnly)" />
+                </td>
+            </tr>
+            <tr>
+                <td>Check for Lowercase String:</td>
+                <td>
+                    <input type="text" id="input4" maxlength="30" size="30" />
+                </td>
+                <td>
+                    <input type="button" value="Test"
+                                onclick="Javascript:testInputData('input4',lowercaseOnly)" />
+                </td>
+            </tr>
+            <tr>
+                <td>Check for String:</td>
+                <td>
+                    <input type="text" id="input5" maxlength="30" size="30" />
+                </td>
+                <td>
+                    <input type="button" value="Test"
+                                onclick="Javascript:testInputData('input5',stringOnly)" />
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+</body>
+</html>
