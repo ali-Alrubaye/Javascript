@@ -12,10 +12,6 @@
             alert("Du Måste Skriva Användare Name");
         }
     };
-    
-   
-
-    
     document.getElementById("button2").onclick = function() {
         document.getElementById("Paragraph1").style.color = "#ff0000";
 

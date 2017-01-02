@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{CE572B99-B01E-41BF-AF06-10C57ABCA4C0}</ProjectGuid>
+    <ProjectGuid>{91FAEBD9-81B4-40EB-85D1-7707E52D3B22}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Lab3</RootNamespace>
-    <AssemblyName>Lab3</AssemblyName>
+    <RootNamespace>Lab4</RootNamespace>
+    <AssemblyName>Lab4</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -109,14 +109,8 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\jquery-3.1.1.js" />
     <Content Include="Global.asax" />
-    <Content Include="Models\Lab3.1.html" />
-    <Content Include="Models\Lab3.2.html" />
-    <Content Include="Models\Lab3.3.html" />
-    <Content Include="MyCss\Css3.2.css" />
-    <Content Include="MyCss\Css3.css" />
-    <Content Include="MyJs\Js3.2.js" />
-    <Content Include="MyJs\Js3.3.js" />
-    <Content Include="MyJs\Js3.js" />
+    <Content Include="Models\Lab4-1.1.html" />
+    <Content Include="MyJs\4.1\1.1.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -127,6 +121,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="MyCss\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -141,9 +136,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>12672</DevelopmentServerPort>
+          <DevelopmentServerPort>21989</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:12672/</IISUrl>
+          <IISUrl>http://localhost:21989/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
