@@ -94,12 +94,17 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\angular.min.js" />
     <Content Include="Models\Lab4.2.2.html" />
+    <Content Include="MyJs\Js.4.3.2.js" />
+    <Content Include="MyJs\js4.3.1.js" />
     <Content Include="MyJs\Js4.2.2.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Models\Lab4.3.1.html" />
+    <Content Include="Models\Lab4.3.2.html" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

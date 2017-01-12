@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+	<link href="../Content/bootstrap.css" rel="stylesheet" />
+    <script src="../Content/angular.min.js"></script>
+	<script src="../MyJs/Js.4.3.2.js"></script>
+</head>
+<body ng-controller="myController">
+<div class="container">
+    <div class="row">
+        <div class="jumbotron text-center">
+            <h2>Lab 4.3.2</h2>
+        </div>
+        <h2>Filter</h2>
+        <label class="col-xs-2">Search All: <input ng-model="searchText.$"/></label>
+        <label class="col-xs-3">Equality <input type="checkbox" ng-model="strict"/></label>
+            <table class="table">
+                <thead >
+                <tr class="label-info">
+                    <th>Category</th>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Ort</th>
+                    <th>Tel</th>
+                </tr>
+                </thead>
+                <tbody >
+                <tr ng-repeat="stInf in students | filter:searchText:strict" >
+                    <td>{{stInf.name}}</td>
+                    <td>{{stInf.firstName}}</td>
+                    <td>{{stInf.lastName}}</td>
+                    <td>{{stInf.ort}}</td>
+                    <td>{{stInf.Tel}}</td>
+                </tr>
+                 
+                </tbody>
+            </table>
+        </div>
+</div>
+
+</body>
+</html>

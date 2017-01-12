@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <script src="../Content/angular.min.js"></script>
+    <script src="../MyJs/js4.3.1.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row text-center">
+            <div class="jumbotron">
+                <h1>Välkommen</h1>
+                <h3>Lab 4.3.1</h3>
+            </div>
+                <div class="col-lg-4" ng-controller="myController">
+                    <div ng-repeat="bil in biler">
+                        {{bil}}
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>
