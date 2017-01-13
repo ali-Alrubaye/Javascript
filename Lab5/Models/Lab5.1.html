@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+
+    <!--<script src="../Content/jquery-3.1.1.js"></script>-->
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <script src="../Content/angular.min.js"></script>
+    <script src="../MyJs/Lab5.1.js"></script>
+</head>
+<body ng-controller="Ctrl">
+<div class="container">
+    <div class="row">
+        <div class="jumbotron text-center">
+            <h2>Lab 4.3.2</h2>
+        </div>
+        <button id="btnStud" ng-click="showme=true">Studenter</button>
+        <button id="btnUtbild " ng-click="showme=false">Utbildningar</button>
+
+        
+        <div  class="wrapper form-group">
+            <div ng-hide="showme">
+                <ul ng-repeat="stInf in persons">
+                    <li> {{stInf.name}} {{stInf.status}} {{stInf.utbildning}}</li>
+                </ul>
+            </div>
+            <div ng-show="showme">
+                <ul ng-repeat="utbil in utbildningar ">
+                    <li>{{utbil.name}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

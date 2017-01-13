@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <script src="../Content/angular.min.js"></script>
+    <script src="../MyJs/Lab5.2.js"></script>
+</head>
+<body ng-controller="Ctrl">
+    <div class="container">
+        <div class="row">
+            <div class="jumbotron text-center">
+                <h2>Lab 5.2</h2>
+            </div>
+            <div>
+                <div class="form-group">
+                    <button id="btnStud" class="btn btn-primary" ng-click="showme=true">Studenter</button>
+                    <button id="btnUtbild " class="btn btn-primary" ng-click="showme=false">Utbildningar</button>
+                    <button id="btnshow" class="btn btn-primary" ng-click="myVar=true">Add student to Database</button>
+                </div>
+                <div ng-show="myVar">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Name" />
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Utbildningar:
+              <select ng-model="myColor" ng-options="utbil.name  for utbil in utbildningar"></select>
+                            </label><br />
+                        </div>
+                        <div class="form-group">
+                            <button id="btnAdd" class="btn btn-default">Add student</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="wrapper form-group">
+                <div ng-hide="showme">
+                    <ul ng-repeat="stInf in persons">
+                        <li> {{stInf.name}} {{stInf.status}} {{stInf.utbildning}}</li>
+                    </ul>
+                </div>
+                <div ng-show="showme">
+                    <ul ng-repeat="utbil in utbildningar ">
+                        <li>{{utbil.name}}</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

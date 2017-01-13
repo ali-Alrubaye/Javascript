@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html ng-app="App">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <script src="../Content/angular.min.js"></script>
+    <script src="../MyJs/Jul.js"></script>
+</head>
+<body ng-controller="filmsController">
+    <div class="container">
+        <div class="row">
+            <div class="jumbotron text-center">
+                <h2>Lab Jul Lab</h2>
+            </div>
+            <div class="col-lg-4">
+                <label>Search: <input ng-model="searchText" placeholder="Search Film"></label>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-lg-4">
+
+                    <ul>
+                        <li data-ng-repeat="f in Film | filter:searchText ">{{ f.title }} - {{ f.date}}</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4" ng-controller="usersController">
+                    <ul>
+                        <li data-ng-repeat="u in Users ">{{ u.users }} - {{ u.usersName}} - {{ u.password}}</li>
+                    </ul>
+                </div>
+
+            </div>
+    </div>
+</body>
+</html>
