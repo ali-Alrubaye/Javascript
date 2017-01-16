@@ -14,7 +14,6 @@
 
     $.each(myApp.per, function(key, value) {
         $("#unsortedList1").hide().append("<li>" + value.fullNames() + "</li>");
-        
     });
 $(document).ready(function () {
    
